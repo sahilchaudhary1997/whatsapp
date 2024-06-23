@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WhatsApp Client Initialization</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://localhost:9000/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="http://localhost:9000/whatsapp.js"></script>
+
+  </head>
+  <body>
+    <!-- <h1>Initialize WhatsApp Clients</h1> -->
+    <!-- <form id="phoneNumberForm">
+      <input
+        type="text"
+        id="phoneNumberInput"
+        placeholder="Enter phone number"
+        required
+      />
+      <button type="submit">Initialize</button>
+    </form> -->
+    <div id="clients" style="text-align: center;"></div>
+    <div  style="display:none;" id="chats" class="">
+      <section class="a1-row container">
+        <aside class="a1-column aside">
+          <div
+            class="a1-row a1-center-items-v a1-justify-items a1-half-padding-tb a1-padding-lr bg-left-panel-header a1-spaced-items border-r"
+          >
+            <img
+              src="https://i.ibb.co/KK52Gp5/aviv-profile.jpg"
+              class="profile-pic"
+              alt="Profile Picture"
+            />
+            <div class="a1-row a1-spaced-items a1-center-items-v icon-color">
+              <i class="fas fa-adjust" onclick="toggle()"></i>
+              <i class="fas fa-circle-notch"></i>
+              <i class="fas fa-comment-alt"></i>
+              <i class="fas fa-ellipsis-v"></i>
+            </div>
+          </div>
+          
+          <h3 class="chat-content">Chats</h4>
+          <div
+            class="a1-row a1-center-items-v a1-padding a1-spaced-items search"
+          >
+            <i class="fas fa-search icon-color"></i>
+            <input
+              type="text"
+              class="a1-long"
+              placeholder="Search or start new chat"
+            />
+          </div>
+          <div class="a1-column a1-long a1-elastic friends-panel" id="friends-panel" onscroll="handleScroll(1,'friends-panel')"></div>
+        </aside>
+        <main class="a1-column main " style="display: none;"></main>
+      </section>
+    </div>
+  </body>
+<script>
+
+// Get specific parameter value
+const phoneNumber = "8700736847";
+
+console.log(phoneNumber);
+
+</script>
+</html>
